@@ -1,0 +1,23 @@
+services:
+  # Backend Service
+  - type: web
+    name: prou-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: MONGO_URI
+        sync: false # User must provide this in Render dashboard
+      - key: PYTHON_VERSION
+        value: 3.9.0
+
+  # Frontend Service
+  - type: static
+    name: prou-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

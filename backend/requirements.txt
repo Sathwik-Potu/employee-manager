@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+motor
+pymongo==4.8.0
+pydantic<2.0.0
+python-dotenv
+email-validator
