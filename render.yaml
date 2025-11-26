@@ -11,16 +11,11 @@ services:
       - key: PYTHON_VERSION
         value: 3.9.0
 
-  # Frontend Service
   - type: web
     name: prou-frontend
-    env: static
+    env: node
     buildCommand: cd frontend && npm install && npm run build
-    staticPublishPath: frontend/dist
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    startCommand: cd frontend && npx serve -s dist -l $PORT
     envVars:
       - key: VITE_API_URL
         sync: false
