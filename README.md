@@ -51,7 +51,7 @@ This project includes a `render.yaml` file for easy deployment on Render.
 
 1. Create a new Web Service on Render connected to your GitHub repository.
 2. Select "Blueprint" and use the `render.yaml` file.
-3. **Important**: You must set the `MONGO_URI` environment variable in the Render dashboard for the backend service to connect to your MongoDB Atlas cluster.
+3. **Important**: You must set the `MONGO_URL` environment variable in the Render dashboard for the backend service to connect to your MongoDB Atlas cluster.
 
 ## Features
 - **Employee Management**: Add, List, Update, Delete employees.
