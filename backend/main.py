@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import employees, tasks
+from backend.routes import employees, tasks
 
 app = FastAPI(title="ProU Assignment API")
 
