@@ -16,17 +16,15 @@ A full-stack application for managing Employees and Tasks, built with React (Fro
 - MongoDB 
 
 ### Backend Setup
-1. Navigate to the `backend` directory:
-   ```bash
-   cd backend
-   ```
+### Backend Setup
+1. Open a terminal in the main project folder.
 2. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -r backend/requirements.txt
    ```
-3. Run the server:
+3. Run the server (from the main folder):
    ```bash
-   uvicorn main:app --reload
+   uvicorn backend.main:app --reload
    ```
 
 ### Frontend Setup
