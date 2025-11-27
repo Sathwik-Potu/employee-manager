@@ -19,7 +19,7 @@ A full-stack application for managing Employees and Tasks, built with React (Fro
 1. Open a terminal in the main project folder.
 2. Create a `.env` file in the `backend` folder and add your MongoDB connection string:
    ```
-  MONGO_URI=MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/?retryWrites=true&w=majority
+   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/?retryWrites=true&w=majority
    ```
 3. Install dependencies:
    ```bash
@@ -50,7 +50,7 @@ This project includes a `render.yaml` file for easy deployment on Render.
 
 1. Create a new Web Service on Render connected to your GitHub repository.
 2. Select "Blueprint" and use the `render.yaml` file.
-3. **Important**: You must set the `MONGO_URL` environment variable in the Render dashboard for the backend service to connect to your MongoDB Atlas cluster.
+3. **Important**: You must set the `MONGO_URI` environment variable in the Render dashboard for the backend service to connect to your MongoDB Atlas cluster.
 
 ## Features
 - **Employee Management**: Add, List, Update, Delete employees.
