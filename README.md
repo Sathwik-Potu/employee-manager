@@ -28,7 +28,6 @@ A full-stack application for managing Employees and Tasks, built with React (Fro
    ```bash
    uvicorn main:app --reload
    ```
-   The API will be available at `http://localhost:8000`.
 
 ### Frontend Setup
 1. Navigate to the `frontend` directory:
@@ -43,7 +42,6 @@ A full-stack application for managing Employees and Tasks, built with React (Fro
    ```bash
    npm run dev
    ```
-   The app will be available at `http://localhost:5173`.
 
 ## Deployment (Render)
 
