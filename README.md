@@ -19,7 +19,7 @@ A full-stack application for managing Employees and Tasks, built with React (Fro
 1. Open a terminal in the main project folder.
 2. Create a `.env` file in the `backend` folder and add your MongoDB connection string:
    ```
-   MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/?retryWrites=true&w=majority
+  MONGO_URI=MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/?retryWrites=true&w=majority
    ```
 3. Install dependencies:
    ```bash
