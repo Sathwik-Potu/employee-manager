@@ -24,7 +24,7 @@ const mockTasks = [
 
 export const getEmployees = async () => {
     if (USE_MOCK_DATA) return { data: mockEmployees };
-    return api.get('/employees');
+    return api.get('/employees/');
 };
 
 export const createEmployee = async (employee) => {
@@ -33,7 +33,7 @@ export const createEmployee = async (employee) => {
         mockEmployees.push(newEmployee);
         return { data: newEmployee };
     }
-    return api.post('/employees', employee);
+    return api.post('/employees/', employee);
 };
 
 export const updateEmployee = async (id, employee) => {
@@ -48,7 +48,7 @@ export const deleteEmployee = async (id) => {
 
 export const getTasks = async () => {
     if (USE_MOCK_DATA) return { data: mockTasks };
-    return api.get('/tasks');
+    return api.get('/tasks/');
 };
 
 export const createTask = async (task) => {
@@ -57,7 +57,7 @@ export const createTask = async (task) => {
         mockTasks.push(newTask);
         return { data: newTask };
     }
-    return api.post('/tasks', task);
+    return api.post('/tasks/', task);
 };
 
 export const updateTask = async (id, task) => {
